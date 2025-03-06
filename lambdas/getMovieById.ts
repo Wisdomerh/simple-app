@@ -25,6 +25,7 @@ export const handler: Handler = async (event, context) => {
         Key: { id: movieId },
       })
     );
+    
     if (!commandOutput.Item) {
       return {
         statusCode: 404,
